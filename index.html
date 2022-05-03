@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>password generator</title>
+</head>
+<body>
+        <div class="container">
+                <h2 class="title">Gerador de Senha</h2>
+                <div class="password-container">
+                        <span class="password"></span>
+                        <div><img src="assets/imgs/clipboard.svg" alt="" class="clipboard"></div>
+                </div>
+                <ul class="settings">
+                        <li>
+                                <label for="lenghtInpt">Nº de caracteres</label>
+                                <input type="number" max="20" min="8" value="8" id="lenghtInpt" class="lenghtInpt">
+                        </li>
+                        <li>
+                                <label for="upperInpt">Incluir letras maiúsculas</label>
+                                <input type="checkbox" id="upperInpt" class="upperInpt" checked>
+                        </li>
+                        <li>
+                                <label for="lowerInpt">Incluir letras minúsculas</label>
+                                <input type="checkbox" id="lowerInpt" class="lowerInpt" checked>
+                        </li>
+                        <li>
+                                <label for="numberInpt">Incluir números</label>
+                                <input type="checkbox" id="numberInpt" class="numberInpt" checked>
+                        </li>
+                        <li>
+                                <label for="symbolsInpt">Incluir símbolos</label>
+                                <input type="checkbox" id="symbolsInpt" class="symbolsInpt" checked>
+                        </li>
+                </ul>
+                <div class="generator-btn">GERAR SENHA</div>
+        </div>
+
+        <script src="assets/js/script.js"></script>
+</body>
+</html>

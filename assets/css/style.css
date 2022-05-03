@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*::before,
+*::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+}
+
+html{
+        font-family: 'Roboto', sans-serif;
+}
+
+body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        background-color: #DDFFE7;
+}
+
+.container{
+        background-color: #98D7C2;
+        width: 25em;
+        border-radius: .3em;
+        padding: 1.5em;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        color: #073e3f;
+}
+
+.title{
+        text-transform: uppercase;
+}
+
+.password-container{
+        width: 100%;
+        height: 3em;
+        line-height: 3em;
+        padding: 0 1em;
+        border-radius: .1em;
+        position: relative;
+        background-color: #073e3f;
+        margin: 1em 0;
+        text-align: start;
+        color: #98D7C2;
+}
+
+.password-container > div{
+        width: 2.2em;
+        height: 2.5em;
+        border-radius: .1em;
+        background-color: #98D7C2;
+        position: absolute;
+        right: .25em;
+        top: .25em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        transition: transform .2s ease, border .2s ease;
+}
+
+.password-container > div:active{
+        border: 2px solid #DDFFE7;
+        transform: scale(.96);
+}
+
+.clipboard{
+        height: 1.8em;
+        filter: invert(18%) sepia(10%) saturate(5884%) hue-rotate(141deg) brightness(93%) contrast(94%);
+}
+
+.password-container > div::after{
+        opacity: 0;
+        content: 'copiado!';
+        position: absolute;
+        line-height: 2em;
+        height: 2em;
+        padding: 0 .5em;
+        border-radius: .1em;
+        background-color: #073e3f;
+        right: -7.5em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: opacity .2s ease;
+}
+
+.password-container > div.show::after{
+        opacity: 1;
+}
+
+.settings{
+        margin: 2em 0 0 0;
+        display: block;
+}
+
+.settings > li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.settings > li + li{
+        margin: 1em 0 0 0;
+        padding: 1em 0 0 0;
+        border-top: 1px solid hsla(181, 80%, 14%, 0.13);
+}
+
+.lenghtInpt{
+        width: 3em;
+        user-select: none;
+        text-align: center;
+}
+
+.lenghtInpt:focus{
+        outline-color: #073e3f;
+}
+
+.generator-btn{
+        background-color: #073e3f;
+        width: 60%;
+        color: #98D7C2;
+        height: 3em;
+        line-height: 3em;
+        margin: 2em auto 0 auto;
+        cursor: pointer;
+        border-radius: .1em;
+        user-select: none;
+        transition: transform .2s ease;
+}
+
+.generator-btn:active{
+        transform: scale(.98);
+}
